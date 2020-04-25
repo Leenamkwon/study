@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["prettier", "import", "node", "promise", "standard", "jset"],
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "globals": {
+    "document": "readonly",
+    "navigator": "readonly",
+    "window": "readonly"
+  },
+  "overrides": [],
+  "rules": {
+    "no-console": "warn"
+  }
+}
