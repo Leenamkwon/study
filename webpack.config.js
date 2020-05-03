@@ -5,7 +5,8 @@ require('webpack')
 
 module.exports = {
   entry: {
-    app: './src/index.js',
+    // app: './src/index.js',
+    prototype: './src/3_week/event/index.js',
   },
   devtool: 'inline-source-map',
   module: {
@@ -26,7 +27,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      template: './src/3_week/event/index.html',
       filename: './index.html',
       showErrors: true, // dev-server error 발생시 브라우저에 에러 노출 여부
     }),
